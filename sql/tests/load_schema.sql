@@ -2,6 +2,8 @@
 -- Get the real schema using something similar to the following:
 -- pgdump
 
-CREATE SCHEMA IF NOT EXISTS ds;
+CREATE SCHEMA ds;
 
-CREATE TABLE IF NOT EXISTS 
+CREATE TABLE ds.test_table
+(id int)
+DISTRIBUTED BY (id);
